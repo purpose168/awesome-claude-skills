@@ -6,7 +6,7 @@
 <br/>
 
 <div align="center">
-    <strong>The awesome collection of Claude Skills with official and community-built resources.
+    <strong>Claude Skills 官方和社区构建资源的精彩合集。
     </strong>
     <br />
     <br />
@@ -16,7 +16,7 @@
 <div align="center">
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-claude-skills?label=Last%20update&style=flat-square)
+![最后更新](https://img.shields.io/github/last-commit/VoltAgent/awesome-claude-skills?label=Last%20update&style=flat-square)
 [![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
 [![GitHub forks](https://img.shields.io/github/forks/VoltAgent/awesome-claude-skills?style=social)](https://github.com/VoltAgent/awesome-claude-skills/network/members)
 
@@ -24,43 +24,43 @@
 
 # Awesome Claude Skills
 
-Claude Skills are folders with instructions, scripts, and resources that teach Claude specific tasks. Skills can include executable code and are loaded only when needed, allowing you to maintain hundreds without performance impact. Multiple skills can run together for complex tasks like document creation, code testing, and data analysis.
+Claude Skills（Claude技能）是包含指令、脚本和资源的文件夹，用于教授Claude完成特定任务。技能可以包含可执行代码，并且仅在需要时加载，允许您维护数百个技能而不会影响性能。多个技能可以一起运行以完成复杂任务，如文档创建、代码测试和数据分析。
 
 
 
-### What a Basic Skill Looks Like?
+### 基本技能的结构是什么样的？
 
 ```YAML
 ---
-name: api-tester
-description: Test REST APIs and validate responses
+name: api-tester  # 技能名称：api-tester
+description: Test REST APIs and validate responses  # 技能描述：测试REST API并验证响应
 ---
 
-# API Tester
+# API测试器
 
-Test HTTP endpoints and validate response structures.
+测试HTTP端点并验证响应结构。
 
-## When to Use This Skill
+## 何时使用此技能
 
-Use this skill when you need to test API endpoints and verify response data.
+当您需要测试API端点并验证响应数据时，请使用此技能。
 
-## Instructions
+## 说明
 
-When testing an API:
+测试API时：
 
-1. Send a request to the specified endpoint
-2. Check the response status code
-3. Validate the response body structure
-4. Report any errors or unexpected results
+1. 向指定端点发送请求
+2. 检查响应状态码
+3. 验证响应体结构
+4. 报告任何错误或意外结果
 
-## Response Validation
+## 响应验证
 
-- Verify required fields exist
-- Check data types match expected values
-- Confirm nested objects have correct structure
+- 验证必填字段是否存在
+- 检查数据类型是否匹配预期值
+- 确认嵌套对象具有正确的结构
 ```
 
-See the [official repo](https://github.com/anthropics/skills) and [creation guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) for more details.
+有关更多详细信息，请参阅[官方仓库](https://github.com/anthropics/skills)和[创建指南](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)。
 
 <br/>
 
@@ -70,146 +70,146 @@ See the [official repo](https://github.com/anthropics/skills) and [creation guid
 
 <br/>
 
-## Official Claude Skills
+## 官方Claude技能
 
-### Document Creation
+### 文档创建
 
-- **[anthropics/docx](https://github.com/anthropics/skills/tree/main/skills/docx)** - Create, edit, and analyze Word documents
-- **[anthropics/doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)** - Collaborative document editing and co-authoring
-- **[anthropics/pptx](https://github.com/anthropics/skills/tree/main/skills/pptx)** - Create, edit, and analyze PowerPoint presentations
-- **[anthropics/xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx)** - Create, edit, and analyze Excel spreadsheets
-- **[anthropics/pdf](https://github.com/anthropics/skills/tree/main/skills/pdf)** - Extract text, create PDFs, and handle forms
+- **[anthropics/docx](https://github.com/anthropics/skills/tree/main/skills/docx)** - 创建、编辑和分析Word文档
+- **[anthropics/doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)** - 协作文档编辑和共同创作
+- **[anthropics/pptx](https://github.com/anthropics/skills/tree/main/skills/pptx)** - 创建、编辑和分析PowerPoint演示文稿
+- **[anthropics/xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx)** - 创建、编辑和分析Excel电子表格
+- **[anthropics/pdf](https://github.com/anthropics/skills/tree/main/skills/pdf)** - 提取文本、创建PDF和处理表单
 
-### Creative and Design
+### 创意与设计
 
-- **[anthropics/algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art)** - Create generative art using p5.js with seeded randomness
-- **[anthropics/canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design)** - Design visual art in PNG and PDF formats
-- **[anthropics/frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)** - Frontend design and UI/UX development tools
-- **[anthropics/slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator)** - Create animated GIFs optimized for Slack size constraints
-- **[anthropics/theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory)** - Style artifacts with professional themes or generate custom themes
+- **[anthropics/algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art)** - 使用p5.js和种子随机性创建生成艺术
+- **[anthropics/canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design)** - 设计PNG和PDF格式的视觉艺术
+- **[anthropics/frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)** - 前端设计和UI/UX开发工具
+- **[anthropics/slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator)** - 创建针对Slack大小限制优化的动画GIF
+- **[anthropics/theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory)** - 使用专业主题为工件设置样式或生成自定义主题
 
-### Development
+### 开发
 
-- **[anthropics/web-artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder)** - Build complex claude.ai HTML artifacts with React and Tailwind
-- **[anthropics/mcp-builder](https://github.com/anthropics/skills/tree/main/skills/mcp-builder)** - Create MCP servers to integrate external APIs and services
-- **[anthropics/webapp-testing](https://github.com/anthropics/skills/tree/main/skills/webapp-testing)** - Test local web applications using Playwright
+- **[anthropics/web-artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder)** - 使用React和Tailwind构建复杂的claude.ai HTML工件
+- **[anthropics/mcp-builder](https://github.com/anthropics/skills/tree/main/skills/mcp-builder)** - 创建MCP服务器以集成外部API和服务
+- **[anthropics/webapp-testing](https://github.com/anthropics/skills/tree/main/skills/webapp-testing)** - 使用Playwright测试本地Web应用程序
 
-### Branding and Communication
+### 品牌与沟通
 
-- **[anthropics/brand-guidelines](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines)** - Apply Anthropic's brand colors and typography to artifacts
-- **[anthropics/internal-comms](https://github.com/anthropics/skills/tree/main/skills/internal-comms)** - Write status reports, newsletters, and FAQs
+- **[anthropics/brand-guidelines](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines)** - 将Anthropic的品牌颜色和排版应用于工件
+- **[anthropics/internal-comms](https://github.com/anthropics/skills/tree/main/skills/internal-comms)** - 编写状态报告、新闻通讯和常见问题解答
 
-### Meta
+### 元技能
 
-- **[anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator)** - Guide for creating skills that extend Claude's capabilities
-- **[anthropics/template](https://github.com/anthropics/skills/tree/main/template)** - Basic template for creating new skills
+- **[anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator)** - 创建扩展Claude功能的技能指南
+- **[anthropics/template](https://github.com/anthropics/skills/tree/main/template)** - 创建新技能的基本模板
 
-## Community Skills
+## 社区技能
 
-### Productivity and Collaboration
+### 生产力与协作
 
-- **[notiondevs/Notion Skills for Claude](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0)** - Skills for working with Notion
-- **[PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill)** - Interact with NotebookLM for document-based conversations
-- **[obra/superpowers-lab](https://github.com/obra/superpowers-lab)** - Lab environment for Claude superpowers
-- **[obra/brainstorming](https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md)** - Generate and explore ideas
-- **[obra/writing-plans](https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md)** - Create strategic documentation
-- **[obra/executing-plans](https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md)** - Implement and run strategic plans
-- **[obra/dispatching-parallel-agents](https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md)** - Coordinate multiple simultaneous agents
-- **[obra/sharing-skills](https://github.com/obra/superpowers/blob/main/skills/sharing-skills/SKILL.md)** - Distribute and communicate capabilities
-- **[obra/using-superpowers](https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md)** - Leverage core platform capabilities
-- **[ComposioHQ/content-research-writer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer)** - Enhance writing with research
-- **[ComposioHQ/meeting-insights-analyzer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer)** - Analyze meeting communication patterns
-- **[ComposioHQ/competitive-ads-extractor](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor)** - Analyze competitor advertising
-- **[ComposioHQ/image-enhancer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer)** - Improve image quality
-- **[wrsmith108/linear-claude-skill](https://github.com/wrsmith108/linear-claude-skill)** - Manage Linear issues, projects, and teams with MCP tools, SDK scripts, and GraphQL fallbacks
+- **[notiondevs/Notion Skills for Claude](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0)** - 用于Notion协作的技能
+- **[PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill)** - 与NotebookLM交互进行基于文档的对话
+- **[obra/superpowers-lab](https://github.com/obra/superpowers-lab)** - Claude超能力实验室环境
+- **[obra/brainstorming](https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md)** - 生成和探索想法
+- **[obra/writing-plans](https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md)** - 创建战略文档
+- **[obra/executing-plans](https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md)** - 实施和运行战略计划
+- **[obra/dispatching-parallel-agents](https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md)** - 协调多个同时运行的代理
+- **[obra/sharing-skills](https://github.com/obra/superpowers/blob/main/skills/sharing-skills/SKILL.md)** - 分发和传达功能
+- **[obra/using-superpowers](https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md)** - 利用核心平台功能
+- **[ComposioHQ/content-research-writer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer)** - 通过研究增强写作能力
+- **[ComposioHQ/meeting-insights-analyzer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer)** - 分析会议沟通模式
+- **[ComposioHQ/competitive-ads-extractor](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor)** - 分析竞争对手的广告
+- **[ComposioHQ/image-enhancer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer)** - 提高图像质量
+- **[wrsmith108/linear-claude-skill](https://github.com/wrsmith108/linear-claude-skill)** - 使用MCP工具、SDK脚本和GraphQL回退管理Linear问题、项目和团队
 
-### Development and Testing
+### 开发与测试
 
-- **[zxkane/aws-skills](https://github.com/zxkane/aws-skills)** - AWS development with infrastructure automation and cloud architecture patterns
-- **[conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill)** - Control iOS Simulator
-- **[sanjay3290/postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres)** - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support
-- **[jthack/ffuf-claude-skill](https://github.com/jthack/ffuf_claude_skill)** - Web fuzzing with ffuf
-- **[lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill)** - Browser automation with Playwright
-- **[scarletkc/vexor](https://github.com/scarletkc/vexor)** - Vector-powered CLI for semantic file search with a Claude/Codex skill
-- **[obra/test-driven-development](https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md)** - Write tests before implementing code
-- **[ComposioHQ/changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator)** - Transform git commits into release notes
-- **[obra/subagent-driven-development](https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/SKILL.md)** - Development using multiple sub-agents
-- **[obra/systematic-debugging](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md)** - Methodical problem-solving in code
-- **[obra/root-cause-tracing](https://github.com/obra/superpowers/blob/main/skills/root-cause-tracing/SKILL.md)** - Investigate and identify fundamental problems
-- **[obra/testing-skills-with-subagents](https://github.com/obra/superpowers/blob/main/skills/testing-skills-with-subagents/SKILL.md)** - Collaborative testing approaches
-- **[obra/testing-anti-patterns](https://github.com/obra/superpowers/blob/main/skills/testing-anti-patterns/SKILL.md)** - Identify ineffective testing practices
-- **[obra/finishing-a-development-branch](https://github.com/obra/superpowers/blob/main/skills/finishing-a-development-branch/SKILL.md)** - Complete Git code branches
-- **[obra/requesting-code-review](https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/SKILL.md)** - Initiate code review processes
-- **[obra/receiving-code-review](https://github.com/obra/superpowers/blob/main/skills/receiving-code-review/SKILL.md)** - Process and incorporate code feedback
-- **[obra/using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/SKILL.md)** - Manage multiple Git working trees
-- **[obra/verification-before-completion](https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md)** - Validate work before finalizing
-- **[obra/condition-based-waiting](https://github.com/obra/superpowers/blob/main/skills/condition-based-waiting/SKILL.md)** - Manage conditional pauses or delays
-- **[obra/commands](https://github.com/obra/superpowers/tree/main/skills/commands)** - Create and manage command structures
-- **[obra/writing-skills](https://github.com/obra/superpowers/blob/main/skills/writing-skills/SKILL.md)** - Develop and document capabilities
-- **[fvadicamo/dev-agent-skills](https://github.com/fvadicamo/dev-agent-skills)** - Git and GitHub workflow skills: git-commit (Conventional Commits), github-pr-creation, github-pr-merge, github-pr-review, plus creating-skills guide
-- **[omkamal/pypict-skill](https://github.com/omkamal/pypict-claude-skill/blob/main/SKILL.md)** - Pairwise test generation
-- **[alinaqi/claude-bootstrap](https://github.com/alinaqi/claude-bootstrap)** - Opinionated project initialization with security-first guardrails, spec-driven atomic todos, LLM testing patterns, and CLI tool orchestration (gh, vercel, supabase)
+- **[zxkane/aws-skills](https://github.com/zxkane/aws-skills)** - 具有基础设施自动化和云架构模式的AWS开发
+- **[conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill)** - 控制iOS模拟器
+- **[sanjay3290/postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres)** - 针对PostgreSQL数据库执行安全的只读SQL查询，支持多连接
+- **[jthack/ffuf-claude-skill](https://github.com/jthack/ffuf_claude_skill)** - 使用ffuf进行Web模糊测试
+- **[lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill)** - 使用Playwright进行浏览器自动化
+- **[scarletkc/vexor](https://github.com/scarletkc/vexor)** - 具有Claude/Codex技能的矢量驱动CLI，用于语义文件搜索
+- **[obra/test-driven-development](https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md)** - 在实现代码之前编写测试
+- **[ComposioHQ/changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator)** - 将git提交转换为发布说明
+- **[obra/subagent-driven-development](https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/SKILL.md)** - 使用多个子代理进行开发
+- **[obra/systematic-debugging](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md)** - 代码中的系统化问题解决
+- **[obra/root-cause-tracing](https://github.com/obra/superpowers/blob/main/skills/root-cause-tracing/SKILL.md)** - 调查并识别根本问题
+- **[obra/testing-skills-with-subagents](https://github.com/obra/superpowers/blob/main/skills/testing-skills-with-subagents/SKILL.md)** - 协作测试方法
+- **[obra/testing-anti-patterns](https://github.com/obra/superpowers/blob/main/skills/testing-anti-patterns/SKILL.md)** - 识别无效的测试实践
+- **[obra/finishing-a-development-branch](https://github.com/obra/superpowers/blob/main/skills/finishing-a-development-branch/SKILL.md)** - 完成Git代码分支
+- **[obra/requesting-code-review](https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/SKILL.md)** - 启动代码审查流程
+- **[obra/receiving-code-review](https://github.com/obra/superpowers/blob/main/skills/receiving-code-review/SKILL.md)** - 处理和整合代码反馈
+- **[obra/using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/SKILL.md)** - 管理多个Git工作树
+- **[obra/verification-before-completion](https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md)** - 在完成前验证工作
+- **[obra/condition-based-waiting](https://github.com/obra/superpowers/blob/main/skills/condition-based-waiting/SKILL.md)** - 管理条件暂停或延迟
+- **[obra/commands](https://github.com/obra/superpowers/tree/main/skills/commands)** - 创建和管理命令结构
+- **[obra/writing-skills](https://github.com/obra/superpowers/blob/main/skills/writing-skills/SKILL.md)** - 开发和记录功能
+- **[fvadicamo/dev-agent-skills](https://github.com/fvadicamo/dev-agent-skills)** - Git和GitHub工作流技能：git-commit（规范提交）、github-pr-creation、github-pr-merge、github-pr-review，以及创建技能指南
+- **[omkamal/pypict-skill](https://github.com/omkamal/pypict-claude-skill/blob/main/SKILL.md)** - 成对测试生成
+- **[alinaqi/claude-bootstrap](https://github.com/alinaqi/claude-bootstrap)** - 带有安全优先防护措施、规范驱动的原子待办事项、LLM测试模式和CLI工具编排（gh、vercel、supabase）的意见性项目初始化
 
-### Context Engineering
+### 上下文工程
 
-- **[muratcankoylan/context-fundamentals](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-fundamentals)** - Understand what context is, why it matters, and the anatomy of context in agent systems
-- **[muratcankoylan/context-degradation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-degradation)** - Recognize patterns of context failure: lost-in-middle, poisoning, distraction, and clash
-- **[muratcankoylan/context-compression](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-compression)** - Design and evaluate compression strategies for long-running sessions
-- **[muratcankoylan/context-optimization](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-optimization)** - Apply compaction, masking, and caching strategies
-- **[muratcankoylan/multi-agent-patterns](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns)** - Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures
-- **[muratcankoylan/memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems)** - Design short-term, long-term, and graph-based memory architectures
-- **[muratcankoylan/tool-design](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/tool-design)** - Build tools that agents can use effectively, including architectural reduction patterns
-- **[muratcankoylan/evaluation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation)** - Build evaluation frameworks for agent systems
+- **[muratcankoylan/context-fundamentals](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-fundamentals)** - 了解上下文是什么、为什么重要以及代理系统中上下文的构成
+- **[muratcankoylan/context-degradation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-degradation)** - 识别上下文失败模式：中间丢失、污染、分心和冲突
+- **[muratcankoylan/context-compression](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-compression)** - 为长时间运行的会话设计和评估压缩策略
+- **[muratcankoylan/context-optimization](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-optimization)** - 应用压缩、掩码和缓存策略
+- **[muratcankoylan/multi-agent-patterns](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns)** - 掌握编排器、对等和分层多代理架构
+- **[muratcankoylan/memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems)** - 设计短期、长期和基于图的内存架构
+- **[muratcankoylan/tool-design](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/tool-design)** - 构建代理可以有效使用的工具，包括架构简化模式
+- **[muratcankoylan/evaluation](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation)** - 为代理系统构建评估框架
 
-### Specialized Domains
+### 专业领域
 
-- **[K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)** - Scientific research and analysis skills
-- **[NotMyself/claude-win11-speckit-update-skill](https://github.com/NotMyself/claude-win11-speckit-update-skill)** - Windows 11 system management
-- **[sanjay3290/imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen)** - Generate images using Google Gemini's API for UI mockups, icons, and visual assets
-- **[jeffersonwarrior/claudisms](https://github.com/jeffersonwarrior/claudisms)** - SMS messaging integration
-- **[SHADOWPR0/security-bluebook-builder](https://github.com/SHADOWPR0/security-bluebook-builder)** - Build a concise, normative security Blue Book for sensitive apps (threat model, data classes, auth/session, logging/audit, retention, IR, security gates)
-- **[obra/defense-in-depth](https://github.com/obra/superpowers/blob/main/skills/defense-in-depth/SKILL.md)** - Multi-layered security approaches
-- **[haunchen/n8n-skill](https://github.com/haunchen/n8n-skills)** - Enables AI assistants to understand and operate n8n workflows with information on 542 nodes and 20 templates.
-- **[materials-simulation-skills](https://github.com/HeshamFS/materials-simulation-skills)** - Agent skills for computational materials science: numerical stability, time-stepping, linear solvers, mesh generation, simulation validation, parameter optimization, and post-processing.
-- **[wrsmith108/varlock-claude-skill](https://github.com/wrsmith108/varlock-claude-skill)** - Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits
+- **[K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)** - 科学研究和分析技能
+- **[NotMyself/claude-win11-speckit-update-skill](https://github.com/NotMyself/claude-win11-speckit-update-skill)** - Windows 11系统管理
+- **[sanjay3290/imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen)** - 使用Google Gemini的API生成UI原型、图标和视觉资产的图像
+- **[jeffersonwarrior/claudisms](https://github.com/jeffersonwarrior/claudisms)** - SMS消息集成
+- **[SHADOWPR0/security-bluebook-builder](https://github.com/SHADOWPR0/security-bluebook-builder)** - 为敏感应用构建简洁、规范的安全蓝皮书（威胁模型、数据类、认证/会话、日志/审计、保留、事件响应、安全门控）
+- **[obra/defense-in-depth](https://github.com/obra/superpowers/blob/main/skills/defense-in-depth/SKILL.md)** - 多层安全方法
+- **[haunchen/n8n-skill](https://github.com/haunchen/n8n-skills)** - 使AI助手能够理解和操作n8n工作流，包含542个节点和20个模板的信息
+- **[materials-simulation-skills](https://github.com/HeshamFS/materials-simulation-skills)** - 计算材料科学的代理技能：数值稳定性、时间步长、线性求解器、网格生成、模拟验证、参数优化和后处理
+- **[wrsmith108/varlock-claude-skill](https://github.com/wrsmith108/varlock-claude-skill)** - 安全环境变量管理，确保机密信息永远不会在Claude会话、终端、日志或git提交中暴露
 
-## Articles and Tutorials
+## 文章和教程
 
-### 📚 Official
+### 📚 官方
 
-- **[Claude Skills Quickstart](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/quickstart)** - Get started with Claude Skills
-- **[Claude Skills Best Practices](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/best-practices)** - Best practices for creating skills
-- **[Skills Cookbook](https://github.com/anthropics/claude-cookbooks/blob/main/skills/README.md)** - Skills examples and guides
-- **[What Are Skills](https://support.claude.com/en/articles/12512176-what-are-skills)** - Introduction to Claude Skills
-- **[Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)** - How to use skills in Claude
-- **[How to Create Custom Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)** - Step-by-step guide to creating skills
-- **[Create a Skill Through Conversation](https://support.claude.com/en/articles/12599426-how-to-create-a-skill-with-claude-through-conversation)** - Create skills by talking to Claude
-- **[Claude for Financial Services Skills](https://support.claude.com/en/articles/12663107-claude-for-financial-services-skills)** - Industry-specific skills for financial services
-- **[Equipping Agents for the Real World](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)** - Technical deep dive into agent skills
-- **[Teach Claude Your Way of Working](https://support.claude.com/en/articles/12580051-teach-claude-your-way-of-working-using-skills)** - Customize Claude with your workflow
+- **[Claude Skills Quickstart](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/quickstart)** - Claude Skills快速入门
+- **[Claude Skills Best Practices](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/best-practices)** - 创建技能的最佳实践
+- **[Skills Cookbook](https://github.com/anthropics/claude-cookbooks/blob/main/skills/README.md)** - 技能示例和指南
+- **[What Are Skills](https://support.claude.com/en/articles/12512176-what-are-skills)** - Claude Skills介绍
+- **[Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)** - 如何在Claude中使用技能
+- **[How to Create Custom Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)** - 创建自定义技能的分步指南
+- **[Create a Skill Through Conversation](https://support.claude.com/en/articles/12599426-how-to-create-a-skill-with-claude-through-conversation)** - 通过与Claude对话创建技能
+- **[Claude for Financial Services Skills](https://support.claude.com/en/articles/12663107-claude-for-financial-services-skills)** - 金融服务的行业特定技能
+- **[Equipping Agents for the Real World](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)** - 代理技能的技术深度解析
+- **[Teach Claude Your Way of Working](https://support.claude.com/en/articles/12580051-teach-claude-your-way-of-working-using-skills)** - 使用技能自定义Claude以适应您的工作方式
 
-### 👥 Community
+### 👥 社区
 
-- **[Simon Willison: Claude Skills](https://simonwillison.net/2025/Oct/16/claude-skills/)** - Introduction to Claude Skills
-- **[Nick Nisi: Claude Skills](https://nicknisi.com/posts/claude-skills/)** - Getting started with Claude Skills
-- **[Young Leaders: Skills, Commands, Subagents, Plugins](https://www.youngleaders.tech/p/claude-skills-commands-subagents-plugins)** - Comparison of Claude features
+- **[Simon Willison: Claude Skills](https://simonwillison.net/2025/Oct/16/claude-skills/)** - Claude Skills介绍
+- **[Nick Nisi: Claude Skills](https://nicknisi.com/posts/claude-skills/)** - Claude Skills入门
+- **[Young Leaders: Skills, Commands, Subagents, Plugins](https://www.youngleaders.tech/p/claude-skills-commands-subagents-plugins)** - Claude功能比较
 
-### 🎥 Videos
+### 🎥 视频
 
-- **[Claude Skills Just 10x'd My AI Agents by Greg Isenberg](https://www.youtube.com/watch?v=G-5bInklwRQ)**
-- **[Claude Skills: Build Your Own AI Experts (Full Breakdown)](https://www.youtube.com/watch?v=46zQX7PSHfU)**
-- **[Agent Skills: Specialized capabilities you can customize](https://www.youtube.com/watch?v=IoqpBKrNaZI)**
-- **[Claude Skills—From TOY to TOOL: Grab My Tutorial](https://www.youtube.com/watch?v=WKFFFumnzYI)**
-- **[Claude Skills: Glimpse of Continual Learning?](https://www.youtube.com/watch?v=FOqbS_llAms)**
-- **[Stop Using MCP... Use NEW Claude Skills Instead](https://www.youtube.com/watch?v=M8yaR-wNGj0)**
-- **[Claude Skills explained: How to create reusable AI workflows](https://www.youtube.com/watch?v=MZZCW179nKM)**
+- **[Claude Skills Just 10x'd My AI Agents by Greg Isenberg](https://www.youtube.com/watch?v=G-5bInklwRQ)** - Greg Isenberg：Claude Skills让我的AI代理能力提升10倍
+- **[Claude Skills: Build Your Own AI Experts (Full Breakdown)](https://www.youtube.com/watch?v=46zQX7PSHfU)** - Claude Skills：构建您自己的AI专家（完整解析）
+- **[Agent Skills: Specialized capabilities you can customize](https://www.youtube.com/watch?v=IoqpBKrNaZI)** - 代理技能：您可以自定义的专业能力
+- **[Claude Skills—From TOY to TOOL: Grab My Tutorial](https://www.youtube.com/watch?v=WKFFFumnzYI)** - Claude Skills—从玩具到工具：获取我的教程
+- **[Claude Skills: Glimpse of Continual Learning?](https://www.youtube.com/watch?v=FOqbS_llAms)** - Claude Skills：持续学习的一瞥？
+- **[Stop Using MCP... Use NEW Claude Skills Instead](https://www.youtube.com/watch?v=M8yaR-wNGj0)** - 停止使用MCP...改用新的Claude Skills
+- **[Claude Skills explained: How to create reusable AI workflows](https://www.youtube.com/watch?v=MZZCW179nKM)** - Claude Skills详解：如何创建可重用的AI工作流
 
-## 🤝 Contributing
+## 🤝 贡献
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+我们欢迎贡献！请参阅[CONTRIBUTING.md](CONTRIBUTING.md)了解指南。
 
-- Submit new skills via PR
-- Improve existing definitions
-- Add new docs & videos & articles
+- 通过PR提交新技能
+- 改进现有定义
+- 添加新的文档、视频和文章
 
-* This is a curated list. We do not audit, endorse, or guarantee the security or correctness of listed projects.
+* 这是一个精选列表。我们不审核、认可或保证列出项目的安全性或正确性。
