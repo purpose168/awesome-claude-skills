@@ -1,9 +1,3 @@
-<a href="https://github.com/VoltAgent/voltagent">
-<img width="1500" height="500" alt="claude-skills" src="https://github.com/user-attachments/assets/39c54dfd-129e-4b43-8b92-20824a56e069" />
-</a>
-
-<br/>
-<br/>
 
 <div align="center">
     <strong>Claude Skills 官方和社区构建资源的精彩合集。
@@ -63,10 +57,6 @@ description: Test REST APIs and validate responses  # 技能描述：测试REST 
 有关更多详细信息，请参阅[官方仓库](https://github.com/anthropics/skills)和[创建指南](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)。
 
 <br/>
-
-<a href="https://github.com/VoltAgent/voltagent">
-<img width="3082" height="592" alt="cta" src="https://github.com/user-attachments/assets/74dbaad4-8285-420b-95df-245948c766c8" />
-</a>
 
 <br/>
 
